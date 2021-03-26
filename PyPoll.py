@@ -45,7 +45,7 @@ with open(file_to_load) as election_data:
 
     # Read the header row
     headers = next(file_reader)
-    
+      
     # Print each row in the CSV
     for row in file_reader:
         # Add to the total vote count
