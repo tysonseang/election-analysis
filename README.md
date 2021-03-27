@@ -46,7 +46,7 @@ The analysis of the election shows that:
 ## Summary of Future Use Cases
 Election commission officals can now redeploy this [code](https://github.com/tysonseang/election-analysis/blob/main/PyPoll_Challenge.py) to calculate election outcomes across the state. The code requires that the source files follow the same formatting structure to execute properly. If the data source is not in the same format, two pieces of code need to be adjusted. 
 
-Firstly, the appropriate depenencies and file paths will need to reflect the appropriate file type and file location of the new data source and text file output. The use of a .csv source file would be the easiest implementation. File paths and file names will still need to be updated in the code. 
+Firstly, the appropriate depenencies and file paths will need to reflect the appropriate file type, file name, and file location of the new data source and text file output. The use of a .csv source file would be the easiest implementation. File paths and file names will still need to be updated in the code. This section is shown below.
 
 ```
 # Add our dependencies.
