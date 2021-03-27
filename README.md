@@ -58,9 +58,9 @@ file_to_save = os.path.join("analysis", "election_results.txt")
 Secondly, the index numbers that pull results for county_name and candidate_name will need to be updated to reflect their position in the new data source. Mirroring the same format of the election_results.csv file with columns for Ballot ID, County, and Candidate would prevent any required code updates here.   
 
 ```
-        # Get the candidate name from each row.
-        candidate_name = row[2]
+# Get the candidate name from each row.
+candidate_name = row[2]
 
-        # 3: Extract the county name from each row.
-        county_name = row[1]
+# Extract the county name from each row.
+county_name = row[1]
 ```
