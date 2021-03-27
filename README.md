@@ -49,7 +49,7 @@ Election commission officials can now redeploy this [code](https://github.com/ty
 Firstly, the appropriate dependencies and file paths will need to reflect the appropriate file type, file name, and file location of the new data source and text file output. The use of a .csv source file would be the easiest implementation. File paths and file names will still need to be updated in the code. This section is shown below.
 
 ```
-# Add our dependencies.
+# Add dependencies.
 import csv
 import os
 
