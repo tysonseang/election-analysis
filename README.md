@@ -68,4 +68,4 @@ candidate_name = row[2]
 # Extract the county name from each row.
 county_name = row[1]
 ```
-Mirroring the same format of the election_results.csv file with ordered columns for Ballot ID, County, and Candidate would prevent any required code updates here. 
+Mirroring the format of the election_results.csv file with same column order of Ballot ID, County, and Candidate would prevent any required code updates here. 
