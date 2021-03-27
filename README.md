@@ -26,7 +26,7 @@ The analysis of the election shows that:
 - Votes were collected from the following counties:
   - Jefferson
   - Denver
-  - Araphoe
+  - Arapahoe
 - County turnout results and their percentage of the total vote count were:
   - Jefferson: 38,855 (10.5%)
   - Denver: 306,055 (82.8%)
@@ -44,9 +44,9 @@ The analysis of the election shows that:
   - Diana DeGette, who received 73.8% of the vote and 272,892 number of votes.
 
 ## Summary of Future Use Cases
-Election commission officals can now redeploy this [code](https://github.com/tysonseang/election-analysis/blob/main/PyPoll_Challenge.py) to calculate election outcomes across the state. The code requires that the source files follow the same formatting structure to execute properly. If the data source is not in the same format, two pieces of code need to be adjusted. 
+Election commission officials can now redeploy this [code](https://github.com/tysonseang/election-analysis/blob/main/PyPoll_Challenge.py) to calculate election outcomes across the state. The code requires that the source files follow the same formatting structure to execute properly. If the data source is not in the same format, two pieces of code need to be adjusted. 
 
-Firstly, the appropriate depenencies and file paths will need to reflect the appropriate file type, file name, and file location of the new data source and text file output. The use of a .csv source file would be the easiest implementation. File paths and file names will still need to be updated in the code. This section is shown below.
+Firstly, the appropriate dependencies and file paths will need to reflect the appropriate file type, file name, and file location of the new data source and text file output. The use of a .csv source file would be the easiest implementation. File paths and file names will still need to be updated in the code. This section is shown below.
 
 ```
 # Add our dependencies.
@@ -68,4 +68,4 @@ candidate_name = row[2]
 # Extract the county name from each row.
 county_name = row[1]
 ```
-Mirroring the format of the election_results.csv file with same column order of Ballot ID, County, and Candidate would prevent any required code updates here. 
+Mirroring the format of the election_results.csv file with the same column order of Ballot ID, County, and Candidate would prevent any required code updates here. 
