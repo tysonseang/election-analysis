@@ -1,21 +1,33 @@
 # election-analysis
 
 ## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+A Colorado Board of Elections employee provided following tasks to complete an election audit of a recent local congressional election.
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of candidates who received votes.
 3. Calculate the total number of votes each candidate received.
 4. Calculate the percentage of votes each candidate won.
 5. Determine the winner of the election based on popular vote.
+6. Calculate voter turnout for each county.
+7. Calculate the percentage of votes from each county out of the total count.
+8. Determine the county with the highest turnout.
 
 ## Resources
 - Data Source: election_results.csv
 - Software: Python 3.8.5; Visual Studio Code 1.54.3
 
-## Summary
+## Results
 The analysis of the election show that:
 - There were 369,711 votes cast in the election.
+- Votes were collected from the following counties:
+  - Jefferson
+  - Denver
+  - Araphoe
+- County turnout results and their percentage of the total vote count were:
+- Jefferson: 38,855 (10.5%)
+- Denver: 306,055 (82.8%)
+- Arapahoe: 24,801 (6.7%)
+- The county with the highest turnout was Denver
 - The candidates were:
   - Charles Casper Stockham
   - Diana DeGette
@@ -27,6 +39,28 @@ The analysis of the election show that:
 - The winner of the election was:
   - Diana DeGette, who received 73.8% of the vote and 272,892 number of votes.
 
-## Challenge Overview
+## Summary of Future Use Cases
+Election commission officals can now redeploy this code to calculate election outcomes across the state. The code requires that the source files follow the same formatting structure to execute properly. If the data source is not in the same format, two pieces of code need to be adjusted. 
 
-## Challenge Summary
+First, the appropriate depenencies and file paths will need to reflect the appropriate file type and file location of the new data source and text file output. The use of a .csv source file would be the easiest implementation. File paths and file names will still need to be updated in the code. 
+
+```
+# Add our dependencies.
+import csv
+import os
+
+# Add a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Add a variable to save the file to a path.
+file_to_save = os.path.join("analysis", "election_results.txt")
+```
+
+Secondly, the index numbers that pull results for county_name and candidate_name will need to be updated to reflect their position in the new data source. Mirroring the same format of the election_results.csv file with columns for Ballot ID, County, and Candidate would prevent any required code updates here.   
+
+```
+        # Get the candidate name from each row.
+        candidate_name = row[2]
+
+        # 3: Extract the county name from each row.
+        county_name = row[1]
+```
